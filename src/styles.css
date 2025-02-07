@@ -1,0 +1,69 @@
+/* Стили для таблицы */
+table {
+  width: 80%; /* Уменьшаем ширину таблицы до 80% от родительского контейнера */
+  max-width: 1000px; /* Максимальная ширина таблицы */
+  margin: 0 auto; /* Выравнивание таблицы по центру */
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;  /* Шрифт для лучшего восприятия */
+}
+
+th, td {
+  border: 1px solid #800000; /* Бордовая граница */
+  padding: 12px;
+  text-align: left;
+  color: #fff; /* Белый текст */
+}
+
+th {
+  background-color: #800000; /* Бордовый фон для заголовков */
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #2b0a06; /* Темный бордовый фон для четных строк */
+}
+
+tr:nth-child(odd) {
+  background-color: #3e1c18; /* Более светлый бордовый фон для нечетных строк */
+}
+
+tr:hover {
+  background-color: #660000; /* Более яркий бордовый фон при наведении */
+}
+
+/* Стили для пагинации */
+div {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 6px 12px;
+  margin: 0 5px;
+  border: 1px solid #800000; /* Бордовая граница */
+  background-color: #800000; /* Бордовый фон */
+  color: #fff; /* Белый текст */
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;  /* Закругленные углы для кнопок */
+}
+
+button:disabled {
+  background-color: #333; /* Темный фон для неактивных кнопок */
+  cursor: not-allowed;
+  color: #666; /* Серый текст для неактивных кнопок */
+}
+
+button.active {
+  font-weight: bold;
+  background-color: #cc3333; /* Яркий бордовый фон для активной страницы */
+  color: white; /* Белый текст для активной страницы */
+  border: 1px solid #cc3333; /* Яркая бордовая граница */
+}
+
+button:hover:not(:disabled) {
+  background-color: #990000; /* Более яркий бордовый фон при наведении */
+  color: white; /* Белый текст при наведении */
+}
